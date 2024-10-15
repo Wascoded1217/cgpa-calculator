@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    <div id="loader"></div>
+
+
+    <section id="loader-container">
+          <section class="wrapper">
+        <h4> GPA Calculator <small>(Grade Point Accumulate)</small> </h4>
+        <div class="container-addCourse">
+            <div class="input-course">
+                <input type="text" placeholder="Course code" id="courseCode">
+            </div>
+            <div class="input-unit">
+                <input type="number" placeholder="Course Unit" maxlength="15" minlength="1"  id="unitCourse">
+            </div>
+            <div class="input-grade">
+                <select id="grade">
+                    <option value="">Grade score</option>
+                    <option value="5">A</option>
+                    <option value="4">B</option>
+                    <option value="3">C</option>
+                    <option value="2">D</option>
+                    <option value="1">E</option>
+                    <option value="0">F</option>
+                </select>
+            </div>
+            <button type="submit" id="btn-add" class="btn-submit"> Add </button>
+        </div>
+        <table id="table-containers" class='table-display'>
+            <thead>
+                <tr>
+                    <th>Course code</th>
+                    <th>Course Unit</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="t_body">
+                <!-- table data shows here -->
+            </tbody>
+            <tfoot id="t_foot">
+                <!-- table data shows here -->
+            </tfoot>
+        </table>
+         <div class="form-btn">
+            <button type="submit" class="display-btn" id="cal-gp">Calculate</button>                        
+            <button type="submit" class="display-btn" id="btn-clear">Clear</button>
+        </div>
+        <div class="cgp-footer" id="cgp-foot">
+            <!-- cgp results shows here -->
+        </div> 
+    </section>
+    
+
+    </section>
+  
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
